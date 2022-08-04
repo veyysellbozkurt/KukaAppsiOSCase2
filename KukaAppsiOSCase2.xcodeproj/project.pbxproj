@@ -7,9 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11DC55BAD016A0A436CAADD7 /* Pods_KukaAppsiOSCase2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B1BD432FE923937EA3F948 /* Pods_KukaAppsiOSCase2.framework */; };
+		1D4A44204368D6EA3AAB5A40 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E400398BC4984B71578764 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework */; };
+		2B9798D5289BA575005FE67A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798D4289BA575005FE67A /* NetworkService.swift */; };
+		2B9798DF289BA650005FE67A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798DE289BA650005FE67A /* UIView+Ext.swift */; };
+		2B9798E1289BA65F005FE67A /* Animation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798E0289BA65F005FE67A /* Animation+Ext.swift */; };
+		2B9798E3289BA66D005FE67A /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798E2289BA66D005FE67A /* UIColor+Ext.swift */; };
+		2B9798E5289BA679005FE67A /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798E4289BA679005FE67A /* UIImage+Ext.swift */; };
+		2B9798E7289BA6E1005FE67A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798E6289BA6E1005FE67A /* Constants.swift */; };
+		2B9798E9289BAA2E005FE67A /* CategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798E8289BAA2E005FE67A /* CategoriesTVC.swift */; };
+		2B9798EB289BAA64005FE67A /* ProductsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798EA289BAA64005FE67A /* ProductsCVC.swift */; };
+		2B9798ED289BAAD0005FE67A /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798EC289BAAD0005FE67A /* ProductDetailVC.swift */; };
+		2B9798EF289BADA8005FE67A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798EE289BADA8005FE67A /* CategoryCell.swift */; };
+		2B9798F1289BAE36005FE67A /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798F0289BAE36005FE67A /* CategoryViewModel.swift */; };
+		2B9798F3289BAE42005FE67A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798F2289BAE42005FE67A /* ProductViewModel.swift */; };
+		2B9798F7289BBAC1005FE67A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798F6289BBAC1005FE67A /* API.swift */; };
+		2B9798F9289BBF36005FE67A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798F8289BBF36005FE67A /* Product.swift */; };
+		2B9798FB289BD92D005FE67A /* UIActivityIndicator+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798FA289BD92D005FE67A /* UIActivityIndicator+Ext.swift */; };
+		2B9798FD289BDDA8005FE67A /* Alert+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798FC289BDDA8005FE67A /* Alert+Ext.swift */; };
+		2B9798FF289BE09B005FE67A /* ProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798FE289BE09B005FE67A /* ProductsCell.swift */; };
 		2BD11CEE289BA17800E379B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CED289BA17800E379B1 /* AppDelegate.swift */; };
 		2BD11CF0289BA17800E379B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CEF289BA17800E379B1 /* SceneDelegate.swift */; };
-		2BD11CF2289BA17800E379B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CF1289BA17800E379B1 /* ViewController.swift */; };
 		2BD11CF5289BA17800E379B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD11CF3289BA17800E379B1 /* Main.storyboard */; };
 		2BD11CF8289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CF6289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld */; };
 		2BD11CFA289BA17900E379B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD11CF9289BA17900E379B1 /* Assets.xcassets */; };
@@ -17,6 +35,7 @@
 		2BD11D08289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11D07289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift */; };
 		2BD11D12289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11D11289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift */; };
 		2BD11D14289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11D13289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift */; };
+		E4427FF844EA179C6AB80DE3 /* Pods_KukaAppsiOSCase2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2AE813AEBAAE8945412862 /* Pods_KukaAppsiOSCase2Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +56,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		155603B0D88BE64F93BC9D02 /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		27C069231E976E1F075E811D /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B9798D4289BA575005FE67A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2B9798DE289BA650005FE67A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		2B9798E0289BA65F005FE67A /* Animation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Ext.swift"; sourceTree = "<group>"; };
+		2B9798E2289BA66D005FE67A /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		2B9798E4289BA679005FE67A /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		2B9798E6289BA6E1005FE67A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B9798E8289BAA2E005FE67A /* CategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTVC.swift; sourceTree = "<group>"; };
+		2B9798EA289BAA64005FE67A /* ProductsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCVC.swift; sourceTree = "<group>"; };
+		2B9798EC289BAAD0005FE67A /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		2B9798EE289BADA8005FE67A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2B9798F0289BAE36005FE67A /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		2B9798F2289BAE42005FE67A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		2B9798F6289BBAC1005FE67A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2B9798F8289BBF36005FE67A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2B9798FA289BD92D005FE67A /* UIActivityIndicator+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicator+Ext.swift"; sourceTree = "<group>"; };
+		2B9798FC289BDDA8005FE67A /* Alert+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Ext.swift"; sourceTree = "<group>"; };
+		2B9798FE289BE09B005FE67A /* ProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCell.swift; sourceTree = "<group>"; };
 		2BD11CEA289BA17800E379B1 /* KukaAppsiOSCase2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KukaAppsiOSCase2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD11CED289BA17800E379B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD11CEF289BA17800E379B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BD11CF1289BA17800E379B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BD11CF4289BA17800E379B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BD11CF7289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KukaAppsiOSCase2.xcdatamodel; sourceTree = "<group>"; };
 		2BD11CF9289BA17900E379B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +88,13 @@
 		2BD11D0D289BA17900E379B1 /* KukaAppsiOSCase2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KukaAppsiOSCase2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD11D11289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsiOSCase2UITests.swift; sourceTree = "<group>"; };
 		2BD11D13289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsiOSCase2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30B1BD432FE923937EA3F948 /* Pods_KukaAppsiOSCase2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KukaAppsiOSCase2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6F36A2D2A9C9838A7DE657 /* Pods-KukaAppsiOSCase2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2.release.xcconfig"; sourceTree = "<group>"; };
+		5135D5EE28B7C805D8168522 /* Pods-KukaAppsiOSCase2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2AE813AEBAAE8945412862 /* Pods_KukaAppsiOSCase2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KukaAppsiOSCase2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2D05F408BBB7386FA0BC85 /* Pods-KukaAppsiOSCase2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2Tests.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2Tests/Pods-KukaAppsiOSCase2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D6E400398BC4984B71578764 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB06D06CD918D7ED1B9CF529 /* Pods-KukaAppsiOSCase2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2Tests.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2Tests/Pods-KukaAppsiOSCase2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DC55BAD016A0A436CAADD7 /* Pods_KukaAppsiOSCase2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4427FF844EA179C6AB80DE3 /* Pods_KukaAppsiOSCase2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +118,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4A44204368D6EA3AAB5A40 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9798D6289BA5BD005FE67A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798DE289BA650005FE67A /* UIView+Ext.swift */,
+				2B9798FC289BDDA8005FE67A /* Alert+Ext.swift */,
+				2B9798FA289BD92D005FE67A /* UIActivityIndicator+Ext.swift */,
+				2B9798E0289BA65F005FE67A /* Animation+Ext.swift */,
+				2B9798E2289BA66D005FE67A /* UIColor+Ext.swift */,
+				2B9798E4289BA679005FE67A /* UIImage+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2B9798D7289BA5CF005FE67A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798E6289BA6E1005FE67A /* Constants.swift */,
+				2B9798F6289BBAC1005FE67A /* API.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		2B9798D8289BA5D7005FE67A /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		2B9798D9289BA5E6005FE67A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		2B9798DA289BA5F8005FE67A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798E8289BAA2E005FE67A /* CategoriesTVC.swift */,
+				2B9798EA289BAA64005FE67A /* ProductsCVC.swift */,
+				2B9798EC289BAAD0005FE67A /* ProductDetailVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2B9798DB289BA5FF005FE67A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798EE289BADA8005FE67A /* CategoryCell.swift */,
+				2B9798FE289BE09B005FE67A /* ProductsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2BD11CE1289BA17800E379B1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +187,8 @@
 				2BD11D06289BA17900E379B1 /* KukaAppsiOSCase2Tests */,
 				2BD11D10289BA17900E379B1 /* KukaAppsiOSCase2UITests */,
 				2BD11CEB289BA17800E379B1 /* Products */,
+				8A250D3C0031A66A73EBA801 /* Pods */,
+				3D1FDE8986FC8FA9932D7A25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +205,13 @@
 		2BD11CEC289BA17800E379B1 /* KukaAppsiOSCase2 */ = {
 			isa = PBXGroup;
 			children = (
-				2BD11CED289BA17800E379B1 /* AppDelegate.swift */,
-				2BD11CEF289BA17800E379B1 /* SceneDelegate.swift */,
-				2BD11CF1289BA17800E379B1 /* ViewController.swift */,
-				2BD11CF3289BA17800E379B1 /* Main.storyboard */,
-				2BD11CF9289BA17900E379B1 /* Assets.xcassets */,
-				2BD11CFB289BA17900E379B1 /* LaunchScreen.storyboard */,
-				2BD11CFE289BA17900E379B1 /* Info.plist */,
-				2BD11CF6289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld */,
+				2BD11D20289BA21E00E379B1 /* System */,
+				2BD11D21289BA24E00E379B1 /* CoreData */,
+				2BD11D22289BA2B900E379B1 /* Service */,
+				2BD11D23289BA2C300E379B1 /* Helper */,
+				2BD11D24289BA2CC00E379B1 /* View */,
+				2BD11D25289BA2D000E379B1 /* Model */,
+				2BD11D27289BA2EE00E379B1 /* ViewModel */,
 			);
 			path = KukaAppsiOSCase2;
 			sourceTree = "<group>";
@@ -130,6 +233,95 @@
 			path = KukaAppsiOSCase2UITests;
 			sourceTree = "<group>";
 		};
+		2BD11D20289BA21E00E379B1 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				2BD11CED289BA17800E379B1 /* AppDelegate.swift */,
+				2BD11CEF289BA17800E379B1 /* SceneDelegate.swift */,
+				2BD11CF3289BA17800E379B1 /* Main.storyboard */,
+				2BD11CF9289BA17900E379B1 /* Assets.xcassets */,
+				2BD11CFE289BA17900E379B1 /* Info.plist */,
+				2BD11CFB289BA17900E379B1 /* LaunchScreen.storyboard */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		2BD11D21289BA24E00E379B1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2BD11CF6289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2BD11D22289BA2B900E379B1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798D4289BA575005FE67A /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2BD11D23289BA2C300E379B1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798D6289BA5BD005FE67A /* Extension */,
+				2B9798D8289BA5D7005FE67A /* Enum */,
+				2B9798D7289BA5CF005FE67A /* Constant */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2BD11D24289BA2CC00E379B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798DA289BA5F8005FE67A /* ViewController */,
+				2B9798DB289BA5FF005FE67A /* Cell */,
+				2B9798D9289BA5E6005FE67A /* CustomView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BD11D25289BA2D000E379B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798F8289BBF36005FE67A /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BD11D27289BA2EE00E379B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B9798F0289BAE36005FE67A /* CategoryViewModel.swift */,
+				2B9798F2289BAE42005FE67A /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D1FDE8986FC8FA9932D7A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B1BD432FE923937EA3F948 /* Pods_KukaAppsiOSCase2.framework */,
+				D6E400398BC4984B71578764 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework */,
+				9D2AE813AEBAAE8945412862 /* Pods_KukaAppsiOSCase2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A250D3C0031A66A73EBA801 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5135D5EE28B7C805D8168522 /* Pods-KukaAppsiOSCase2.debug.xcconfig */,
+				3D6F36A2D2A9C9838A7DE657 /* Pods-KukaAppsiOSCase2.release.xcconfig */,
+				27C069231E976E1F075E811D /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig */,
+				155603B0D88BE64F93BC9D02 /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig */,
+				DB06D06CD918D7ED1B9CF529 /* Pods-KukaAppsiOSCase2Tests.debug.xcconfig */,
+				BC2D05F408BBB7386FA0BC85 /* Pods-KukaAppsiOSCase2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD11D17289BA17900E379B1 /* Build configuration list for PBXNativeTarget "KukaAppsiOSCase2" */;
 			buildPhases = (
+				71B2CC40D70D97A69FD8A820 /* [CP] Check Pods Manifest.lock */,
 				2BD11CE6289BA17800E379B1 /* Sources */,
 				2BD11CE7289BA17800E379B1 /* Frameworks */,
 				2BD11CE8289BA17800E379B1 /* Resources */,
+				AD884D315CC9EA3ED4A76EB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD11D1A289BA17900E379B1 /* Build configuration list for PBXNativeTarget "KukaAppsiOSCase2Tests" */;
 			buildPhases = (
+				32E790BC456B3B11C8363E09 /* [CP] Check Pods Manifest.lock */,
 				2BD11CFF289BA17900E379B1 /* Sources */,
 				2BD11D00289BA17900E379B1 /* Frameworks */,
 				2BD11D01289BA17900E379B1 /* Resources */,
@@ -172,9 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD11D1D289BA17900E379B1 /* Build configuration list for PBXNativeTarget "KukaAppsiOSCase2UITests" */;
 			buildPhases = (
+				9FE2005C4302E26DC8479D30 /* [CP] Check Pods Manifest.lock */,
 				2BD11D09289BA17900E379B1 /* Sources */,
 				2BD11D0A289BA17900E379B1 /* Frameworks */,
 				2BD11D0B289BA17900E379B1 /* Resources */,
+				517E71FB1D04E15EE6331B42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,15 +453,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32E790BC456B3B11C8363E09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KukaAppsiOSCase2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		517E71FB1D04E15EE6331B42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71B2CC40D70D97A69FD8A820 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KukaAppsiOSCase2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FE2005C4302E26DC8479D30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD884D315CC9EA3ED4A76EB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BD11CE6289BA17800E379B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD11CF2289BA17800E379B1 /* ViewController.swift in Sources */,
+				2B9798F1289BAE36005FE67A /* CategoryViewModel.swift in Sources */,
+				2B9798EF289BADA8005FE67A /* CategoryCell.swift in Sources */,
+				2B9798D5289BA575005FE67A /* NetworkService.swift in Sources */,
+				2B9798E1289BA65F005FE67A /* Animation+Ext.swift in Sources */,
+				2B9798DF289BA650005FE67A /* UIView+Ext.swift in Sources */,
 				2BD11CEE289BA17800E379B1 /* AppDelegate.swift in Sources */,
+				2B9798E7289BA6E1005FE67A /* Constants.swift in Sources */,
+				2B9798E9289BAA2E005FE67A /* CategoriesTVC.swift in Sources */,
+				2B9798FB289BD92D005FE67A /* UIActivityIndicator+Ext.swift in Sources */,
+				2B9798FF289BE09B005FE67A /* ProductsCell.swift in Sources */,
+				2B9798E3289BA66D005FE67A /* UIColor+Ext.swift in Sources */,
+				2B9798EB289BAA64005FE67A /* ProductsCVC.swift in Sources */,
+				2B9798F9289BBF36005FE67A /* Product.swift in Sources */,
+				2B9798E5289BA679005FE67A /* UIImage+Ext.swift in Sources */,
+				2B9798FD289BDDA8005FE67A /* Alert+Ext.swift in Sources */,
 				2BD11CF8289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld in Sources */,
+				2B9798ED289BAAD0005FE67A /* ProductDetailVC.swift in Sources */,
 				2BD11CF0289BA17800E379B1 /* SceneDelegate.swift in Sources */,
+				2B9798F7289BBAC1005FE67A /* API.swift in Sources */,
+				2B9798F3289BAE42005FE67A /* ProductViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +752,7 @@
 		};
 		2BD11D18289BA17900E379B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5135D5EE28B7C805D8168522 /* Pods-KukaAppsiOSCase2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,12 +760,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9CXW4HNGPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KukaAppsiOSCase2/Info.plist;
+				INFOPLIST_FILE = KukaAppsiOSCase2/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +783,7 @@
 		};
 		2BD11D19289BA17900E379B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6F36A2D2A9C9838A7DE657 /* Pods-KukaAppsiOSCase2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,12 +791,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9CXW4HNGPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KukaAppsiOSCase2/Info.plist;
+				INFOPLIST_FILE = KukaAppsiOSCase2/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +814,7 @@
 		};
 		2BD11D1B289BA17900E379B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB06D06CD918D7ED1B9CF529 /* Pods-KukaAppsiOSCase2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +835,7 @@
 		};
 		2BD11D1C289BA17900E379B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2D05F408BBB7386FA0BC85 /* Pods-KukaAppsiOSCase2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +856,7 @@
 		};
 		2BD11D1E289BA17900E379B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C069231E976E1F075E811D /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +875,7 @@
 		};
 		2BD11D1F289BA17900E379B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155603B0D88BE64F93BC9D02 /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
