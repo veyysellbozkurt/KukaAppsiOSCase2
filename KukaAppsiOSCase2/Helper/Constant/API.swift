@@ -14,6 +14,8 @@ struct API {
     static let baseUrl = "https://fakestoreapi.com/products/"
     
     static let getCategories = "categories"
+    static let getProducts = "category/"
+    static let fetchDiscount = "https://my-json-server.typicode.com/muratyilmaz/case/outfits"
     
     
 }

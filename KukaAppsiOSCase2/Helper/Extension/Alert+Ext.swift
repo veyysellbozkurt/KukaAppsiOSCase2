@@ -7,7 +7,8 @@
 
 import UIKit
 
-extension UITableViewController {
+
+extension UIViewController {
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default)

@@ -22,14 +22,24 @@ class CategoriesTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .primary
+        tableView.backgroundColor = .primary
+        setupTableView()
+        fetchData()
+    }
+    
+ 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationItem.title = ""
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationItem.title = "Categories"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.largeTitleTextAttributes = [
-            NSAttributedString.Key.foregroundColor : UIColor.navigationLargeTitle,
+            NSAttributedString.Key.foregroundColor : UIColor.appBlack,
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 30, weight: .medium)]
-        setupTableView()
-        fetchData()
     }
     
     private func fetchData() {
@@ -37,7 +47,9 @@ class CategoriesTVC: UITableViewController {
         categoryVM.fetchCategories { isFetched in
             self.tableView.hideActivityIndicator()
             if isFetched {
-                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } else {
                 self.showAlert(title: "Error", message: "There was an error!!")
             }
@@ -48,8 +60,12 @@ class CategoriesTVC: UITableViewController {
         tableView.separatorColor = .tableViewSeparator
         tableView.register(CategoryCell.self, forCellReuseIdentifier: CategoryCell.identifier)
     }
-    
-    // MARK: - Table view data source
+}
+
+
+
+
+extension CategoriesTVC {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryVM.categories.count
@@ -66,6 +82,7 @@ class CategoriesTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let navigationVC = ProductsCVC(layout: UICollectionViewFlowLayout(), categoryName: categoryVM.categories[indexPath.row])
+        self.navigationController?.pushViewController(navigationVC, animated: true)
     }
 }

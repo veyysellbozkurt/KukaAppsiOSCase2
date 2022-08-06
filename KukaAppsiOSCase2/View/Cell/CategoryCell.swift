@@ -23,7 +23,7 @@ class CategoryCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.backgroundColor = .cellBackground
+        self.backgroundColor = .categoryCellBackground
         accessoryType = .disclosureIndicator
         separatorInset = .zero
         selectionStyle = .none
@@ -39,7 +39,7 @@ class CategoryCell: UITableViewCell {
         if selected {
             self.backgroundColor = .cellSelectionTint
         } else {
-            self.backgroundColor = .cellBackground
+            self.backgroundColor = .categoryCellBackground
         }
     }
     

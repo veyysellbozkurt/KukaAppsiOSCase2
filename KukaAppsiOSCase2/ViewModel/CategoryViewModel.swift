@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Alamofire
 
 class CategoryViewModel {
     
@@ -14,24 +13,22 @@ class CategoryViewModel {
     
     func fetchCategories(completed: @escaping(Bool) -> ()) {
         let params: [String:Any] = [:]
-        NetworkService.shared.fetchAndComplete(url: API.getCategories, param: params, method: .get) { response in
+        NetworkService.shared.fetchFakeStoreAndComplete(url: API.getCategories, param: params, method: .get) { response in
             switch response.result {
                 case .success(let data):
-                    if data != nil {
-                        do {
-                            let adam = try JSONDecoder().decode([String].self, from: data!)
-                            print("akd", adam)
-                            self.categories = adam
-                            completed(true)
-                        } catch let error{
-                            completed(false)
-                            print("hata", error.localizedDescription)
-                        }
-                    } else {
+                    guard let data = data else {
+                        completed(false)
+                        return
+                    }
+                    do {
+                        let categoryArray = try JSONDecoder().decode([String].self, from: data)
+                        self.categories = categoryArray
+                        completed(true)
+                    } catch {
                         completed(false)
                     }
-                case .failure(let error):
-                    print("hata var", error)
+                case .failure(_):
+                    break
             }
         }
     }

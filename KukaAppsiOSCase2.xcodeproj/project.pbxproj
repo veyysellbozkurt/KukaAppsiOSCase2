@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		11DC55BAD016A0A436CAADD7 /* Pods_KukaAppsiOSCase2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B1BD432FE923937EA3F948 /* Pods_KukaAppsiOSCase2.framework */; };
 		1D4A44204368D6EA3AAB5A40 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E400398BC4984B71578764 /* Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests.framework */; };
+		2B00AA19289D150400E179A3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00AA18289D150400E179A3 /* String+Ext.swift */; };
+		2B1CF41F289E88F600E5E86C /* DiscountProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CF41E289E88F600E5E86C /* DiscountProduct.swift */; };
+		2B1CF421289E986400E5E86C /* GetDiscountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CF420289E986400E5E86C /* GetDiscountCell.swift */; };
+		2B1CF423289EA4F900E5E86C /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CF422289EA4F900E5E86C /* ProductDetailViewModel.swift */; };
 		2B9798D5289BA575005FE67A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798D4289BA575005FE67A /* NetworkService.swift */; };
 		2B9798DF289BA650005FE67A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798DE289BA650005FE67A /* UIView+Ext.swift */; };
 		2B9798E1289BA65F005FE67A /* Animation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798E0289BA65F005FE67A /* Animation+Ext.swift */; };
@@ -26,6 +30,7 @@
 		2B9798FB289BD92D005FE67A /* UIActivityIndicator+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798FA289BD92D005FE67A /* UIActivityIndicator+Ext.swift */; };
 		2B9798FD289BDDA8005FE67A /* Alert+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798FC289BDDA8005FE67A /* Alert+Ext.swift */; };
 		2B9798FF289BE09B005FE67A /* ProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9798FE289BE09B005FE67A /* ProductsCell.swift */; };
+		2B979901289BF2E6005FE67A /* UINavigationCont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B979900289BF2E6005FE67A /* UINavigationCont+Ext.swift */; };
 		2BD11CEE289BA17800E379B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CED289BA17800E379B1 /* AppDelegate.swift */; };
 		2BD11CF0289BA17800E379B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CEF289BA17800E379B1 /* SceneDelegate.swift */; };
 		2BD11CF5289BA17800E379B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD11CF3289BA17800E379B1 /* Main.storyboard */; };
@@ -58,6 +63,10 @@
 /* Begin PBXFileReference section */
 		155603B0D88BE64F93BC9D02 /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		27C069231E976E1F075E811D /* Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests/Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B00AA18289D150400E179A3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		2B1CF41E289E88F600E5E86C /* DiscountProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountProduct.swift; sourceTree = "<group>"; };
+		2B1CF420289E986400E5E86C /* GetDiscountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDiscountCell.swift; sourceTree = "<group>"; };
+		2B1CF422289EA4F900E5E86C /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		2B9798D4289BA575005FE67A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2B9798DE289BA650005FE67A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		2B9798E0289BA65F005FE67A /* Animation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Ext.swift"; sourceTree = "<group>"; };
@@ -75,6 +84,7 @@
 		2B9798FA289BD92D005FE67A /* UIActivityIndicator+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicator+Ext.swift"; sourceTree = "<group>"; };
 		2B9798FC289BDDA8005FE67A /* Alert+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Ext.swift"; sourceTree = "<group>"; };
 		2B9798FE289BE09B005FE67A /* ProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCell.swift; sourceTree = "<group>"; };
+		2B979900289BF2E6005FE67A /* UINavigationCont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationCont+Ext.swift"; sourceTree = "<group>"; };
 		2BD11CEA289BA17800E379B1 /* KukaAppsiOSCase2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KukaAppsiOSCase2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD11CED289BA17800E379B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD11CEF289BA17800E379B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,11 +139,13 @@
 			isa = PBXGroup;
 			children = (
 				2B9798DE289BA650005FE67A /* UIView+Ext.swift */,
+				2B979900289BF2E6005FE67A /* UINavigationCont+Ext.swift */,
 				2B9798FC289BDDA8005FE67A /* Alert+Ext.swift */,
 				2B9798FA289BD92D005FE67A /* UIActivityIndicator+Ext.swift */,
 				2B9798E0289BA65F005FE67A /* Animation+Ext.swift */,
 				2B9798E2289BA66D005FE67A /* UIColor+Ext.swift */,
 				2B9798E4289BA679005FE67A /* UIImage+Ext.swift */,
+				2B00AA18289D150400E179A3 /* String+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -154,13 +166,6 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		2B9798D9289BA5E6005FE67A /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomView;
-			sourceTree = "<group>";
-		};
 		2B9798DA289BA5F8005FE67A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +181,7 @@
 			children = (
 				2B9798EE289BADA8005FE67A /* CategoryCell.swift */,
 				2B9798FE289BE09B005FE67A /* ProductsCell.swift */,
+				2B1CF420289E986400E5E86C /* GetDiscountCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -277,7 +283,6 @@
 			children = (
 				2B9798DA289BA5F8005FE67A /* ViewController */,
 				2B9798DB289BA5FF005FE67A /* Cell */,
-				2B9798D9289BA5E6005FE67A /* CustomView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				2B9798F8289BBF36005FE67A /* Product.swift */,
+				2B1CF41E289E88F600E5E86C /* DiscountProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			children = (
 				2B9798F0289BAE36005FE67A /* CategoryViewModel.swift */,
 				2B9798F2289BAE42005FE67A /* ProductViewModel.swift */,
+				2B1CF422289EA4F900E5E86C /* ProductDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -562,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B9798F1289BAE36005FE67A /* CategoryViewModel.swift in Sources */,
+				2B1CF41F289E88F600E5E86C /* DiscountProduct.swift in Sources */,
 				2B9798EF289BADA8005FE67A /* CategoryCell.swift in Sources */,
 				2B9798D5289BA575005FE67A /* NetworkService.swift in Sources */,
 				2B9798E1289BA65F005FE67A /* Animation+Ext.swift in Sources */,
@@ -569,8 +577,10 @@
 				2BD11CEE289BA17800E379B1 /* AppDelegate.swift in Sources */,
 				2B9798E7289BA6E1005FE67A /* Constants.swift in Sources */,
 				2B9798E9289BAA2E005FE67A /* CategoriesTVC.swift in Sources */,
+				2B1CF421289E986400E5E86C /* GetDiscountCell.swift in Sources */,
 				2B9798FB289BD92D005FE67A /* UIActivityIndicator+Ext.swift in Sources */,
 				2B9798FF289BE09B005FE67A /* ProductsCell.swift in Sources */,
+				2B00AA19289D150400E179A3 /* String+Ext.swift in Sources */,
 				2B9798E3289BA66D005FE67A /* UIColor+Ext.swift in Sources */,
 				2B9798EB289BAA64005FE67A /* ProductsCVC.swift in Sources */,
 				2B9798F9289BBF36005FE67A /* Product.swift in Sources */,
@@ -579,7 +589,9 @@
 				2BD11CF8289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld in Sources */,
 				2B9798ED289BAAD0005FE67A /* ProductDetailVC.swift in Sources */,
 				2BD11CF0289BA17800E379B1 /* SceneDelegate.swift in Sources */,
+				2B979901289BF2E6005FE67A /* UINavigationCont+Ext.swift in Sources */,
 				2B9798F7289BBAC1005FE67A /* API.swift in Sources */,
+				2B1CF423289EA4F900E5E86C /* ProductDetailViewModel.swift in Sources */,
 				2B9798F3289BAE42005FE67A /* ProductViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

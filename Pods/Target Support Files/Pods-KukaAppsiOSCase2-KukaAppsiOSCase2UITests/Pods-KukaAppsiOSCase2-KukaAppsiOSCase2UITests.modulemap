@@ -1,0 +1,6 @@
+framework module Pods_KukaAppsiOSCase2_KukaAppsiOSCase2UITests {
+  umbrella header "Pods-KukaAppsiOSCase2-KukaAppsiOSCase2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

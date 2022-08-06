@@ -9,22 +9,23 @@ import UIKit
 
 
 extension UIColor {
-    static let primary                      = UIColor.init(red: 245, green: 245, blue: 245)
-    static let cellBackground               = UIColor.init(red: 250, green: 250, blue: 250)
-    static let navigationLargeTitle         = UIColor.init(red: 0, green: 0, blue: 0)
-    static let navigationTitle              = UIColor.init(red: 6, green: 6, blue: 6)
+    static let primary                      = UIColor.init(red: 250, green: 250, blue: 250)
+    static let cellBackground               = UIColor.init(red: 244, green: 244, blue: 244)
+    static let categoryCellBackground       = UIColor.init(red: 249, green: 248, blue: 248)
+    static let appBlack                     = UIColor.init(red: 0, green: 0, blue: 0)
+    static let appBlack2                    = UIColor.init(red: 6, green: 6, blue: 6)
     static let tableViewSeparator           = UIColor.init(red: 220, green: 220, blue: 220)
-    static let normalLabel                  = UIColor.init(red: 55, green: 55, blue: 55)
+    static let normalLabel                  = UIColor.init(red: 65, green: 65, blue: 65)
     static let weakLabel                    = UIColor.init(red: 189, green: 189, blue: 189)
-    static let itemBackground               = UIColor.init(red: 249, green: 249, blue: 249)
     static let cellSelectionTint            = UIColor.init(red: 230, green: 230, blue: 230)
+    static let priceLabel                   = UIColor.init(red: 48, green: 48, blue: 48)
 }
 
 
 extension UIColor {
     convenience init(hexFromString:String, alpha:CGFloat = 1.0) {
         var cString:String = hexFromString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-        var rgbValue:UInt64 = 10066329 //color #999999 if string has wrong format
+        var rgbValue:UInt64 = 10066329 
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
         }
