@@ -11,11 +11,18 @@ import UIKit
 import Kingfisher
 import SnapKit
 
+
+protocol CellDelegate: AnyObject {
+    func clickedAddToCartOnDetailCell(_ cell: GetDiscountCell)
+}
+
 class GetDiscountCell: UICollectionViewCell {
     
     class var identifier: String {
         return String(describing: self)
     }
+    
+    weak var delegate: CellDelegate?
     
     var product: Product! {
         didSet {
@@ -37,11 +44,21 @@ class GetDiscountCell: UICollectionViewCell {
         return label
     }()
     
-    private let productPrice: UILabel = {
+    var productPrice: UILabel = {
         let label = UILabel()
         label.adjustsFontSizeToFitWidth = true
         label.textColor = .priceLabel
-        label.font = UIFont.systemFont(ofSize: 21, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.adjustsFontSizeToFitWidth = true
+        return label
+    }()
+    
+    var discountedPriceLabel: UILabel = {
+        let label = UILabel()
+        label.isHidden = false
+        label.textAlignment = .right
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.adjustsFontSizeToFitWidth = true
         return label
     }()
     
@@ -52,7 +69,7 @@ class GetDiscountCell: UICollectionViewCell {
         return label
     }()
     
-    private let addToCartButton: UIButton = {
+    var addToCartButton: UIButton = {
        let button = UIButton()
         button.addCornerRadius(4)
         button.setTitle("Add to cart", for: .normal)
@@ -67,6 +84,7 @@ class GetDiscountCell: UICollectionViewCell {
         self.addCornerRadius(5)
         self.backgroundColor = .cellBackground
         setupViews()
+        addToCartButton.addTarget(self, action: #selector(clickedCartButton), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -76,7 +94,13 @@ class GetDiscountCell: UICollectionViewCell {
     func setComponentAttributes() {
         productName.text = product.title
         productPrice.text = "\(product.price ?? 00.00) €".replacingOccurrences(of: ".", with: ",")
+        discountedPriceLabel.isHidden = false
         productRationCount.text = "(\(product.rating?.count ?? 27))"
+        
+    }
+    
+    @objc private func clickedCartButton() {
+        delegate?.clickedAddToCartOnDetailCell(self)
     }
     
     private func setupViews() {
@@ -84,6 +108,7 @@ class GetDiscountCell: UICollectionViewCell {
         addSubview(productName)
         addSubview(productPrice)
         addSubview(addToCartButton)
+        addSubview(discountedPriceLabel)
         
         let starView = UIImageView()
         starView.image = UIImage(named: "Adsız")
@@ -126,10 +151,16 @@ class GetDiscountCell: UICollectionViewCell {
             make.right.equalToSuperview().offset(-10)
         }
         productPrice.snp.makeConstraints { make in
-            make.width.equalToSuperview().multipliedBy(0.8)
+            make.width.equalToSuperview().multipliedBy(0.5)
             make.height.equalTo(30)
             make.top.equalTo(stackView.snp.bottomMargin).offset(2)
-            make.centerX.equalToSuperview()
+            make.left.equalTo(self.snp.leftMargin)
+        }
+        discountedPriceLabel.snp.makeConstraints { make in
+            make.width.equalToSuperview().multipliedBy(0.5)
+            make.height.equalTo(30)
+            make.top.equalTo(stackView.snp.bottomMargin).offset(2)
+            make.right.equalTo(self.snp.rightMargin)
         }
         addToCartButton.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.86)

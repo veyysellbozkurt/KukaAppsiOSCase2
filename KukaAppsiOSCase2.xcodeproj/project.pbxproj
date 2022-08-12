@@ -37,9 +37,6 @@
 		2BD11CF8289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11CF6289BA17800E379B1 /* KukaAppsiOSCase2.xcdatamodeld */; };
 		2BD11CFA289BA17900E379B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD11CF9289BA17900E379B1 /* Assets.xcassets */; };
 		2BD11CFD289BA17900E379B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD11CFB289BA17900E379B1 /* LaunchScreen.storyboard */; };
-		2BD11D08289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11D07289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift */; };
-		2BD11D12289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11D11289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift */; };
-		2BD11D14289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11D13289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift */; };
 		E4427FF844EA179C6AB80DE3 /* Pods_KukaAppsiOSCase2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2AE813AEBAAE8945412862 /* Pods_KukaAppsiOSCase2Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,10 +91,7 @@
 		2BD11CFC289BA17900E379B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BD11CFE289BA17900E379B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD11D03289BA17900E379B1 /* KukaAppsiOSCase2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KukaAppsiOSCase2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD11D07289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsiOSCase2Tests.swift; sourceTree = "<group>"; };
 		2BD11D0D289BA17900E379B1 /* KukaAppsiOSCase2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KukaAppsiOSCase2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD11D11289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsiOSCase2UITests.swift; sourceTree = "<group>"; };
-		2BD11D13289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsiOSCase2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30B1BD432FE923937EA3F948 /* Pods_KukaAppsiOSCase2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KukaAppsiOSCase2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6F36A2D2A9C9838A7DE657 /* Pods-KukaAppsiOSCase2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2.release.xcconfig"; sourceTree = "<group>"; };
 		5135D5EE28B7C805D8168522 /* Pods-KukaAppsiOSCase2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsiOSCase2.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsiOSCase2/Pods-KukaAppsiOSCase2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,8 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				2BD11CEC289BA17800E379B1 /* KukaAppsiOSCase2 */,
-				2BD11D06289BA17900E379B1 /* KukaAppsiOSCase2Tests */,
-				2BD11D10289BA17900E379B1 /* KukaAppsiOSCase2UITests */,
 				2BD11CEB289BA17800E379B1 /* Products */,
 				8A250D3C0031A66A73EBA801 /* Pods */,
 				3D1FDE8986FC8FA9932D7A25 /* Frameworks */,
@@ -220,23 +212,6 @@
 				2BD11D27289BA2EE00E379B1 /* ViewModel */,
 			);
 			path = KukaAppsiOSCase2;
-			sourceTree = "<group>";
-		};
-		2BD11D06289BA17900E379B1 /* KukaAppsiOSCase2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				2BD11D07289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift */,
-			);
-			path = KukaAppsiOSCase2Tests;
-			sourceTree = "<group>";
-		};
-		2BD11D10289BA17900E379B1 /* KukaAppsiOSCase2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				2BD11D11289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift */,
-				2BD11D13289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift */,
-			);
-			path = KukaAppsiOSCase2UITests;
 			sourceTree = "<group>";
 		};
 		2BD11D20289BA21E00E379B1 /* System */ = {
@@ -600,7 +575,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD11D08289BA17900E379B1 /* KukaAppsiOSCase2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +582,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD11D12289BA17900E379B1 /* KukaAppsiOSCase2UITests.swift in Sources */,
-				2BD11D14289BA17900E379B1 /* KukaAppsiOSCase2UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

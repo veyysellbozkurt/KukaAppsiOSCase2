@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ProductDetailVC: UIViewController {
+class ProductDetailVC: UIViewController, CellDelegate {
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -67,9 +67,10 @@ class ProductDetailVC: UIViewController {
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.priceLabel
-        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 23, weight: .bold)
         return label
     }()
+    
     
     private lazy var addToCartButton: UIButton = {
         let button = UIButton()
@@ -116,6 +117,8 @@ class ProductDetailVC: UIViewController {
     private var starStackView =  UIStackView()
     private var divider = UIView()
     
+    static var cartCount = 1
+    
     var product: Product?
     var isAddedToCart = false
     var productDetailVM = ProductDetailViewModel()
@@ -132,7 +135,7 @@ class ProductDetailVC: UIViewController {
         divider.backgroundColor = .weakLabel.withAlphaComponent(0.4)
         divider.addCornerRadius(10)
 
-        addToCartButton.addTarget(self, action: #selector(revertAddToCartButton), for: .touchUpInside)
+        addToCartButton.addTarget(self, action: #selector(clickedAddToCartButton), for: .touchUpInside)
         addToCartButton.addCornerRadius(4)
         
         configureSubviews()
@@ -167,9 +170,11 @@ class ProductDetailVC: UIViewController {
         }
     }
     
-    @objc func revertAddToCartButton() {
+    @objc func clickedAddToCartButton() {
         isAddedToCart.toggle()
         addToCartButton.backgroundColor = isAddedToCart ? .gray : .appBlack
+        addToCartButton.isUserInteractionEnabled = false
+        ProductDetailVC.cartCount += isAddedToCart ?  -1 :  +1        
     }
     
     private func setupCollectionView() {
@@ -206,6 +211,73 @@ class ProductDetailVC: UIViewController {
         stackView.addArrangedSubview(collectionView)
     }
     
+    func clickedAddToCartOnDetailCell(_ clickedCell: GetDiscountCell) {
+        let attributes = [NSAttributedString.Key.strikethroughStyle : NSUnderlineStyle.single.rawValue,
+                          NSAttributedString.Key.underlineColor : UIColor.systemGray2,
+                          NSAttributedString.Key.foregroundColor : UIColor.systemGray2] as [NSAttributedString.Key : Any]
+        ProductDetailVC.cartCount += 1
+        clickedCell.addToCartButton.backgroundColor = .gray
+        clickedCell.addToCartButton.isUserInteractionEnabled = false
+        for cell in self.collectionView.visibleCells  {
+            guard let cell = cell as? GetDiscountCell else { return }
+            cell.discountedPriceLabel.attributedText = NSAttributedString(string: cell.productPrice.text!, attributes: attributes)
+            cell.productPrice.textColor = .systemRed
+            let newPrice = fetchDiscountProductById(id: cell.product.id!)
+            cell.productPrice.text = "\(newPrice) €".replacingOccurrences(of: ".", with: ",")
+        }
+    }
+    private func fetchDiscountProductById(id: Int) -> String {
+        for product in productDetailVM.discountProducts {
+            if product.id == id {
+                let discountLevels = product.price!.discountLevels!
+                for price in discountLevels {
+                    if price.level == ProductDetailVC.cartCount {
+                        return String(format:"%.2f", price.discountedPrice!)
+                    }
+                }
+            }
+        }
+        return "0.0"
+    }
+}
+
+
+extension ProductDetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return productDetailVM.products.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GetDiscountCell.identifier, for: indexPath) as? GetDiscountCell else { fatalError() }
+        cell.delegate = self
+        cell.product = productDetailVM.products[indexPath.row]
+        return cell
+    }
+    
+}
+
+extension ProductDetailVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let widthPercent = deviceWidth - (deviceWidth * 0.051)
+        return CGSize(width: widthPercent / 2.187, height: 320)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 5, left: 1, bottom: 5, right: 1)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 13.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+}
+
+
+extension ProductDetailVC {
     private func setupConstraints() {
         scrollView.snp.makeConstraints { make in
             make.left.right.top.bottom.equalTo(self.view)
@@ -306,39 +378,5 @@ class ProductDetailVC: UIViewController {
             make.right.equalTo(stackView).offset(-15)
             make.top.equalTo(addAndGetLabel.snp.bottom).offset(5)
         }
-    }
-}
-
-
-extension ProductDetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return productDetailVM.products.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GetDiscountCell.identifier, for: indexPath) as? GetDiscountCell else { fatalError() }
-        cell.product = productDetailVM.products[indexPath.row]
-        return cell
-    }
-    
-}
-
-extension ProductDetailVC: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let widthPercent = deviceWidth - (deviceWidth * 0.051)
-        return CGSize(width: widthPercent / 2.187, height: 320)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 5, left: 1, bottom: 5, right: 1)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 13.0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
     }
 }
